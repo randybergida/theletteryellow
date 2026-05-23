@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>The Letter Yellow</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$main = $("body");
+
+			$('#l_band').click(function(){
+				$main.scrollTo($('#e_band'), 600);
+			});
+			$('#l_shows').click(function(){
+				$main.scrollTo($('#e_shows').position().top-80, 600);
+			});
+			$('#l_photos').click(function(){
+				$main.scrollTo($('#e_photos').position().top-80, 600);
+			});
+			$('#l_audio').click(function(){
+				$main.scrollTo($('#e_audio').position().top-80, 600);
+			});
+			$('#l_contact').click(function(){
+				$main.scrollTo($('#e_contact').position().top-80, 600);
+			});
+			$('#l_blog').click(function(){
+				$main.scrollTo($('#e_blog').position().top-80, 600);
+			});
+			$('#l_art').click(function(){
+				$main.scrollTo($('#e_art').position().top-80, 600);
+			});
+
+		});
+	</script>
+	<link href="style_tly.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-32601184-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script>
+</head>
+<body>
+	<div id="nav">
+		<div id="nav-logo">
+			<a href="#" id="l_band"><img src="img/nav_logo.png" title="The Letter Yellow" /></a>
+		</div>
+		<div id="nav-options" class="nhfont" style="z-index: 99;">
+			<div id="nav-social"><a class="small" target="_blank" href="http://facebook.com/theletteryellow"><img src="img/f_icon.png" title="Facebook"></a>
+				<a class="small" target="_blank" href="http://twitter.com/TheLetterYellow"><img src="img/t_icon.png" title="Twitter"></a>
+				<a class="small" target="_blank" href="http://youtube.com/TheLetterYellow"><img src="img/y_icon.png" title="Youtube"></a>
+			</div>			
+			<a href="#" id="l_shows"><img src="img/hdr_shows.png" alt="Shows" /></a>			
+			<a href="#" id="l_photos"><img src="img/hdr_photos.png" alt="Photos & Video" /></a>			
+			<a href="#" id="l_audio"><img src="img/hdr_audio.png" alt="Audio" /></a>			
+			<a href="#" id="l_contact"><img src="img/hdr_contact.png" alt="Contact" /></a>			
+			<a href="http://theletteryellow.bandcamp.com" id="l_store"><img src="img/hdr_store.png" alt="Store" /></a>
+			<a href="#" id="l_blog"><img src="img/hdr_blog.png" alt="Blog" /></a>
+			<a href="#" id="l_art" class="oblique"><img src="img/hdr_art.png" alt="Art Party" /></a>
+		</div>
+		<div id="nav-widgets">
+			<!--<iframe src="http://snapwidget.com/in/?u=cmFuZHliZXJnaWRhfGlufDEwMHwyfDR8fHllc3w1" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:230px; height: 460px" ></iframe>-->
+
+		</div>
+	</div>
+	<div class="elementy" id="e_band">
+		<div class="lefty">			
+        
+        
+			<h2 class="nhfont">THE BAND</h2>
+	        <p>The Letter Yellow began in Brooklyn, NY, in the winter of 2011 when Randy Bergida started writing songs at a furious rate. Just over a year later, in September 2012, he releases the band's debut album "Walking Down the Streets." The 12-track record is a perfect pace of blues and rock—all with a modern kick, a strong beat, and lyrics that are both offbeat and universal. The Letter Yellow is all about real musicians playing together in a real space making real music.</p>
+			<p>A guitarist and vocalist, Randy founded The Letter Yellow after years with Skidmore Fountain, and as a solo singer/songwriter. For "Walking Down the Streets," he teams up with talented friends Mike Thies on drums and Abe Pollack on bass, for a Brooklyn made album. It was recorded at The Creamery, mixed at Studio G and mastered by Total Sonic, which are all in everyone's shared neighborhood, Greenpoint.</p>
+		</div>
+		<div class="righty">
+			<img src="img/jumpwhitesmallbrightgray.jpg" title="The Letter Yellow">
+		</div>
+	</div>
+	<div class="elementy" id="e_shows">
+		<div class="lefty" style="height: 100px;">			
+			<h2>UPCOMING SHOWS</h2>
+	        <p>September 9th 2012<br>Glasslands Gallery<br>Brooklyn, NY<br>w/Live Footage and Little Anchor<br><br><a href="http://www.popgunbooking.com/event/141536">Get Tickets</a></p>
+	    	
+		</div>
+		<div class="righty"><img src="img/glasslandsgallery5.jpg" title="flyer">	
+		</div>
+	</div>
+	<div class="elementy" id="e_photos">
+		<div class="lefty">			
+			<h2>PHOTOS</h2>
+	        <p>Tomonori Tsujita, <br>Yuri Miyamoto <br /></p>
+	    
+		</div>
+		<div class="righty">
+			<img src="img/negatives.jpg" title="The Letter Yellow">	
+		</div>
+	</div>	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>against an orange wall</h2>
+	        <p>by: Tomonori Tsujita</p>
+	    
+		</div>
+		<div class="righty">
+			<img src="img/orange_band.jpg" title="The Letter Yellow">
+		</div>
+	</div>
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>coffee and water</h2>
+	        <p>by: Yuri Miyamoto</p>
+	    
+		</div>
+		<div class="righty">
+			<img src="img/lookinatyouborder.jpg" title="The Letter Yellow">	
+		</div>
+	</div>	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>it was either them or us...someone had to leave the room</h2>
+	        <p>by: Yuri Miyamoto</p>
+	    
+		</div>
+		<div class="righty">
+			<img src="img/superband.jpg" title="The Letter Yellow">	
+		</div>
+	</div>	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>walking</h2>
+	        <p>by: Tomonori Tsujita</p>
+	    
+		</div>
+		<div class="righty">
+			<img src="img/tly_walking.jpg" title="The Letter Yellow">	
+		</div>
+	</div>
+	<div class="elementy" id="e_audio">
+		<div class="lefty">			
+			<h2>AUDIO</h2>
+	        <p><b>"Walking Down The Streets"</b>  <br />
+				Available September 9th 2012
+			</p>
+	    	
+		</div>
+		<div class="righty"><h3/>From their debut album "Walking Down The Streets"
+        </h3\><p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F52634412&show_artwork=true"></iframe>
+			  <P> 
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F52651178&show_artwork=true"></iframe>  	 
+		</div>
+	</div>
+	<div class="elementy" id="e_contact">
+		<div class="lefty">			
+			<h2>CONTACT</h2>
+	        <p>
+            	<a href="mailto:info@theletteryellow.net">info@theletteryellow.net</a><br />
+				<a href="http://facebook.com/theletteryellow">facebook.com/theletteryellow</a><br />
+				<a href="http://twitter.com/TheLetterYellow">@TheLetterYellow</a><br />
+			</p>
+		</div>
+		<div class="righty">
+			<h3>We want to hear from you</h3> 
+			<p>
+            
+              <a href="http://theletteryellow.us5.list-manage.com/subscribe?u=614eaf00b9cbcdff67b52858a&id=a3a66a710f">Subscribe To Our Monthly Newsletter</a><p>
+
+				All booking, press, and licensing inquiries can be directed to:<br/> <a href="mailto:info@theletteryellow.net">info@theletteryellow.net</a><br />
+				<br /><br />
+                All other comments can be shared with us at: <br/><a href="http://facebook.com/theletteryellow">facebook.com/theletteryellow</a><br />
+			<a href="http://twitter.com/TheLetterYellow">@TheLetterYellow</a></p>	
+			<p>
+				<em>The Letter Yellow</em>				
+			</p>
+		</div>
+	</div>
+
+	<div class="elementy" id="e_store">
+		<div class="lefty">			
+			<h2>STORE</h2>
+	        <p>
+	        	Debut Record:<br />	<br /><b>"Walking Down The Streets"</b><br />September 9th 2012
+	        </p>
+		</div>
+		<div class="righty">			
+			<p>
+				<a href="http://www.theletteryellow.bandcamp.com"><img src="img/store.jpg" title="The Letter Yellow"></a>
+			</p>
+		</div>
+	</div>
+	<div class="elementy" id="e_blog">
+		<div class="lefty">			
+			<h2>THE blog</h2>	        
+		</div>
+		<div class="righty">
+        
+           <p>
+				<h3>Our first newsletter hit stands this morning</h3> 
+<p>
+					<a href="http://us5.campaign-archive2.com/?u=614eaf00b9cbcdff67b52858a&id=e566786961">The Monthly Newsletter Edition 1</a><br/><br/>
+					<span class="entry-meta"><em>July 17th, 2012 by Randy Bergida</em></span><p></p>
+
+								
+			<p><br><br>
+        
+        <p>
+				<h3>Record Release Show Announced for Sunday September 9th 2012 at Glasslands Gallery!</h3> 
+<p>
+					It gives me great pleasure to announce The Letter Yellow's debut performance<br>
+                    and record release with good friends Live Footage and Little Anchor.  And I <br>
+                    couldn't be more happy than to release the record in my neighboring neighborhood.<br>
+                    The show will be at one of my favorite venues, Glasslands Gallery in Williamsburg.  I love this place!  <br>
+                    See you Sunday September 9th, 2012.
+					<br /><br />
+					<span class="entry-meta"><em>July 12th, 2012 by Randy Bergida</em></span><p></p>
+
+								
+			<p><br><br>
+				<h3>Remember That Summer 2012</h3> <p>
+
+					Anything could have happened. <br /> The weather was nice and we started something.  
+					<br /><br /></p>
+
+					<span class="entry-meta"><em>May 20th, 2012 by Randy Bergida</em></span>
+			</p>
+    	
+			</p>
+		</div>
+	</div>
+	<div class="elementy" id="e_art">
+		<div class="lefty">			
+			<h2>Art Party</h2>
+			<p>A collection of works from close friends and members of The Letter Yellow. <br /> <br />
+All works created at Songwriter Factory in Greenpoint Brooklyn.</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/deepblue.jpg" title="The Letter Yellow">	
+			</p>
+		</div>
+	</div>
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>man vs. machine</h2>
+			<p>by: Mike Thies 2011</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/manvsmachine.jpg" title="The Letter Yellow">
+			</p>
+		</div>
+	</div>
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>man vs. machine side b</h2>
+			<p>by: Mike Thies 2011</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/manvsmachineb.jpg" title="The Letter Yellow">
+			</p>
+		</div>
+	</div>
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>bridgetown usa</h2>
+			<p>by: Randy Bergida 2011</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/bridge.jpg" title="The Letter Yellow">	
+			</p>
+		</div>
+	</div>
+	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>self portrait of hand</h2>
+			<p>by: Michele De Maria 2012</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/michele.jpg" title="The Letter Yellow">
+			</p>
+		</div>
+	</div>	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>flag</h2>
+			<p>by: Randy Bergida 2011</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/flag.jpg" title="The Letter Yellow">	        	
+			</p>
+		</div>
+	</div>	
+	<div class="elementy">
+		<div class="lefty">			
+			<h2>montAna</h2>
+			<p>by: Mike Thies 2012</p>	        
+		</div>
+		<div class="righty">			
+			<p>
+				<img src="img/montana.jpg" title="The Letter Yellow">
+			</p>
+		</div>
+	</div>	
+</body>
+</html>

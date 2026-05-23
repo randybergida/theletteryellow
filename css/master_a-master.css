@@ -1,0 +1,155 @@
+#u1030
+{
+	background-color: #FFFFFF;
+}
+
+#u1035-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1143-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1035-4:hover,#u1143-4:hover
+{
+	border-style: none;
+	border-color: transparent;
+}
+
+#u1036-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #000000;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1037-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #000000;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1061-4
+{
+	background-color: transparent;
+	line-height: 43px;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1039-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #000000;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1038-4
+{
+	background-color: transparent;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #000000;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u1040-4
+{
+	background-color: transparent;
+	text-align: center;
+	font-size: 13px;
+	line-height: 13px;
+	letter-spacing: 1px;
+	color: #000000;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	position: fixed;
+}
+
+#u1036-4:hover,#u1037-4:hover,#u1039-4:hover,#u1038-4:hover,#u1040-4:hover
+{
+	background-color: transparent;
+}
+
+#u1035-4:hover p,#u1143-4:hover p,#u1036-4:hover p,#u1037-4:hover p,#u1039-4:hover p,#u1038-4:hover p,#u1040-4:hover p
+{
+	color: #7F7F7F;
+	visibility: inherit;
+	text-decoration: underline;
+}
+
+#u1031
+{
+	vertical-align: top;
+	position: fixed;
+	background: url("../images/u1031.png") no-repeat 0px 0px;
+}
+
+#u1031:hover
+{
+	background: url("../images/u1031-r.png") no-repeat 0px 0px;
+}
+
+#u1033
+{
+	vertical-align: top;
+	position: fixed;
+	background: url("../images/u1033.png") no-repeat 0px 0px;
+}
+
+#u1033:hover
+{
+	background: url("../images/u1033-r.png") no-repeat 0px 0px;
+}
+
+#u1041
+{
+	vertical-align: top;
+	position: fixed;
+	background: url("../images/u1041.png") no-repeat 0px 0px;
+}
+
+#u1041:hover
+{
+	background: url("../images/u1041-r.png") no-repeat 0px 0px;
+}
+
