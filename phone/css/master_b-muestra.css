@@ -1,0 +1,177 @@
+#u2017
+{
+	background-color: #FFFFFF;
+}
+
+#u2031-4
+{
+	background-color: transparent;
+	line-height: 43px;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2023-5
+{
+	background-color: transparent;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2033-6
+{
+	background-color: transparent;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2023-5:hover,#u2033-6:hover
+{
+	border-style: none;
+	border-color: transparent;
+}
+
+#u2024-6
+{
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2025-5
+{
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2027-5
+{
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2026-5
+{
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: fixed;
+}
+
+#u2028-6
+{
+	background-color: transparent;
+	color: #000000;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: pt-sans-narrow, sans-serif;
+	font-weight: 400;
+	position: fixed;
+}
+
+#u2024-6:hover,#u2025-5:hover,#u2027-5:hover,#u2026-5:hover,#u2028-6:hover
+{
+	background-color: transparent;
+}
+
+#u2023-5:hover p,#u2033-6:hover p,#u2024-6:hover p,#u2025-5:hover p,#u2027-5:hover p,#u2026-5:hover p,#u2028-6:hover p
+{
+	color: #7F7F7F;
+	visibility: inherit;
+	text-decoration: underline;
+}
+
+#u2018
+{
+	background-color: #D2D2D4;
+}
+
+#u2032-4
+{
+	background-color: transparent;
+	line-height: 31px;
+	text-align: center;
+	font-size: 26px;
+	letter-spacing: 1px;
+	font-family: open-sans-condensed, sans-serif;
+	font-weight: 300;
+	position: relative;
+}
+
+#u2019
+{
+	vertical-align: top;
+	position: relative;
+	background: url("../../images/u2019.png") no-repeat 0px 0px;
+}
+
+#u2019:hover
+{
+	background: url("../../images/u2019-r.png") no-repeat 0px 0px;
+}
+
+#u2021
+{
+	vertical-align: top;
+	position: relative;
+	background: url("../../images/u2021.png") no-repeat 0px 0px;
+}
+
+#u2021:hover
+{
+	background: url("../../images/u2021-r.png") no-repeat 0px 0px;
+}
+
+#u2029
+{
+	vertical-align: top;
+	position: relative;
+	background: url("../../images/u2029.png") no-repeat 0px 0px;
+}
+
+#u2029:hover
+{
+	background: url("../../images/u2029-r.png") no-repeat 0px 0px;
+}
+
