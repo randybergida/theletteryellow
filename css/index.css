@@ -159,41 +159,38 @@ header {
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
     display: grid;
-    /* Default: 1 column for small screens */
-    grid-template-columns: 1fr;
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr); /* 3 uniform columns */
+    grid-auto-rows: 300px;                /* Every cell is 300px tall */
     gap: 20px;
     margin: 50px auto;
     width: 90%;
     max-width: 1200px;
 }
 
-/* Tablet and Desktop: 3 columns */
-@media (min-width: 768px) {
-    .flyers-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.wide { grid-column: span 2; }
-.tall { grid-row: span 2; }
-
 .flyer-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     overflow: hidden;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
 }
 
 .flyer-item img {
     width: 100%;
     height: 100%;
-    /* 'contain' prevents cropping, 'cover' would fill the space */
-    object-fit: contain; 
-    transition: transform 0.3s ease;
+    object-fit: cover; /* Uniform look */
+    display: block;
 }
 
-.flyer-item img:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+.flyer-item:hover {
+    transform: scale(1.03);
+    cursor: zoom-in;
+}
+
+/* Responsive: 2 columns on tablets, 1 on phones */
+@media (max-width: 900px) {
+    .flyers-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .flyers-container { grid-template-columns: 1fr; }
 }
