@@ -80,3 +80,33 @@ header {
     opacity: 0.7;
     transition: opacity 0.2s;
 }
+
+/* --- Mobile Responsive & Hamburger --- */
+.nav-toggle, .nav-toggle-label { display: none; }
+
+@media screen and (max-width: 768px) {
+    /* Adjust container width for mobile */
+    #page { width: 100%; padding: 0 20px; box-sizing: border-box; }
+
+    /* Header adjustments */
+    header { flex-direction: column; gap: 10px; margin: 20px 0; position: relative; }
+
+    /* Show Hamburger button */
+    .nav-toggle-label { 
+        display: block; cursor: pointer; padding: 10px; 
+    }
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display: block; background: #000; height: 2px; width: 25px; position: relative;
+    }
+    .nav-toggle-label span::before { content: ''; position: absolute; top: -8px; }
+    .nav-toggle-label span::after { content: ''; position: absolute; top: 8px; }
+    
+    /* Hide navs by default on mobile */
+    .nav-container { display: none; flex-direction: column; width: 100%; text-align: center; gap: 15px; }
+
+    /* Toggle visibility when checked */
+    .nav-toggle:checked ~ .nav-container { display: flex; }
+    
+    /* Main Photo Responsive */
+    #main-image { height: 300px; }
+}
