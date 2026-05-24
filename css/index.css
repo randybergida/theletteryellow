@@ -158,30 +158,27 @@ header {
 }
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
-    /* This creates a natural column layout */
-    column-width: 300px;
-    column-gap: 20px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 600px; /* Limits the width so they don't get too massive on large screens */
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between the flyers */
 }
 
 .flyer-item {
-    /* This prevents images from breaking weirdly */
-    display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
-    break-inside: avoid;
 }
 
 .flyer-item img {
     width: 100%;
     height: auto;
     display: block;
+    /* Optional: Adds a subtle shadow to make them pop off the page */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
     transition: transform 0.3s ease;
 }
 
 .flyer-item img:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+    transform: scale(1.01);
 }
