@@ -11,15 +11,43 @@ body {
     text-align: center;
 }
 
-/* 2. Header and Logo */
+/* Ensure the page is structured */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #logo {
     display: block;
-    font-family: 'open-sans-condensed', sans-serif;
-    font-weight: 300;
+    font-family: 'open-sans-condensed', sans-serif !important;
     font-size: 36px;
     margin: 40px 0;
     color: #000000;
     text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    font-family: 'open-sans-condensed', sans-serif !important;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 /* 3. Navigation Links */
