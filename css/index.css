@@ -1,249 +1,51 @@
-.version.index /* version checker */
-{
-	color: #0000E0;
-	background-color: #849790;
+/* 1. Basic Reset */
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.html
-{
-	background-color: #FFFFFF;
+#page {
+    width: 960px;
+    margin: 0 auto; /* Centers the whole page */
+    background-color: #FFFFFF;
 }
 
-#page
-{
-	z-index: 1;
-	width: 960px;
-	min-height: 1028px;
-	background-image: none;
-	border-style: none;
-	border-color: transparent;
-	background-color: #FFFFFF;
-	margin-left: auto;
-	margin-right: auto;
+/* 2. Header and Navigation Layout */
+#u1030-bw {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
 }
 
-#page_position_content
-{
-	padding-top: 51px;
-	padding-bottom: 100px;
-	width: 0.01px;
+#u1061-4 {
+    display: block;
+    font-size: 36px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #000;
 }
 
-#u1030
-{
-	z-index: 3;
-	height: 113px;
+/* 3. Navigation Links (Flexbox makes this a row) */
+#pu1035-4 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between links */
+    padding: 20px 0;
 }
 
-#u1030-bw
-{
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	z-index: 3;
-	top: 0px;
+/* 4. Social Media Links */
+#ppu1031 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-#u1061-4
-{
-	z-index: 37;
-	width: 292px;
-	min-height: 41px;
-	top: 36px;
-	left: 334px;
+/* 5. The Main Image (the yellow glass background) */
+#u978 {
+    width: 100%;
+    height: 600px; /* Or whatever height you prefer */
+    background: #D2D2D4 url("../images/yellow%20glass2.jpg") no-repeat center center;
+    background-size: cover;
 }
-
-#ppu1031
-{
-	width: 0.01px;
-	padding-bottom: 27px;
-	margin-left: 845px;
-}
-
-#u1031
-{
-	z-index: 5;
-	height: 27px;
-	width: 27px;
-	top: 51px;
-	left: 845px;
-}
-
-#u1033
-{
-	z-index: 8;
-	height: 27px;
-	width: 27px;
-	top: 51px;
-	left: 879px;
-}
-
-#u1041
-{
-	z-index: 35;
-	height: 24px;
-	width: 24px;
-	top: 52px;
-	left: 914px;
-}
-
-#pu1035-4
-{
-	width: 0.01px;
-	padding-bottom: 14px;
-	margin-left: 22px;
-	margin-top: -21px;
-}
-
-#u1035-4
-{
-	z-index: 10;
-	width: 42px;
-	min-height: 10px;
-	top: 58px;
-	left: 22px;
-}
-
-#u1035-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 10px;
-	width: 42px;
-	margin: 0px;
-}
-
-#u1143-4
-{
-	z-index: 41;
-	width: 56px;
-	min-height: 10px;
-	top: 58px;
-	left: 79px;
-}
-
-#u1143-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 10px;
-	width: 56px;
-	margin: 0px;
-}
-
-#u1036-4
-{
-	z-index: 14;
-	width: 98px;
-	min-height: 14px;
-	top: 58px;
-	left: 151px;
-}
-
-#u1036-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 14px;
-	width: 98px;
-	margin: 0px;
-}
-
-#u1037-4
-{
-	z-index: 18;
-	width: 40px;
-	min-height: 3px;
-	top: 58px;
-	left: 264px;
-}
-
-#u1037-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 3px;
-	width: 40px;
-	margin: 0px;
-}
-
-#u1039-4
-{
-	z-index: 26;
-	width: 35px;
-	min-height: 10px;
-	top: 58px;
-	left: 658px;
-}
-
-#u1039-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 10px;
-	width: 35px;
-	margin: 0px;
-}
-
-#u1038-4
-{
-	z-index: 22;
-	width: 51px;
-	min-height: 14px;
-	top: 58px;
-	left: 708px;
-}
-
-#u1038-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 14px;
-	width: 51px;
-	margin: 0px;
-}
-
-#u1040-4
-{
-	z-index: 30;
-	width: 50px;
-	min-height: 14px;
-	top: 58px;
-	left: 774px;
-}
-
-#u1040-4:hover
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 14px;
-	width: 50px;
-	margin: 0px;
-}
-
-#u978
-{
-	z-index: 2;
-	height: 818px;
-	background: #D2D2D4 url("../images/yellow%20glass2.jpg") no-repeat center center;
-	background-size: cover;
-}
-
-#u978-bw
-{
-	z-index: 2;
-	margin-top: 34px;
-	height: 818px;
-}
-
-body
-{
-	position: relative;
-	min-width: 960px;
-}
-
-#page .verticalspacer
-{
-	clear: both;
-}
-
