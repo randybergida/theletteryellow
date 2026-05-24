@@ -26,11 +26,22 @@ body {
     color: #000;
 }
 
-/* 3. Navigation Links (Flexbox makes this a row) */
+/* 3. Navigation Links - Adding the font properties back */
+#pu1035-4 a {
+    font-family: open-sans-condensed, sans-serif;
+    font-weight: 300;
+    font-size: 14px; /* Adjust this to match your original size */
+    letter-spacing: 1px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase; /* If your original was uppercase */
+}
+
+/* Ensure the container is set up correctly */
 #pu1035-4 {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Spacing between links */
+    gap: 30px; /* Adjust space between links */
     padding: 20px 0;
 }
 
