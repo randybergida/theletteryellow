@@ -158,39 +158,28 @@ header {
 }
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 uniform columns */
-    grid-auto-rows: 300px;                /* Every cell is 300px tall */
-    gap: 20px;
-    margin: 50px auto;
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px; /* This makes them large and readable */
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Nice, big space between each flyer */
 }
 
 .flyer-item {
     display: block;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .flyer-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Uniform look */
+    height: auto; /* Ensures the full aspect ratio is preserved */
     display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Adds depth to the big images */
+    transition: transform 0.3s ease;
 }
 
 .flyer-item:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     cursor: zoom-in;
-}
-
-/* Responsive: 2 columns on tablets, 1 on phones */
-@media (max-width: 900px) {
-    .flyers-container { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-    .flyers-container { grid-template-columns: 1fr; }
 }
