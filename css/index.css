@@ -158,27 +158,37 @@ header {
 }
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
-    width: 90%;
-    max-width: 600px; /* Limits the width so they don't get too massive on large screens */
+    display: grid;
+    /* Create columns that are at least 300px wide, but fill available space */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* This makes the grid pack tightly */
+    grid-auto-flow: dense; 
+    gap: 20px;
     margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Space between the flyers */
+    width: 90%;
+    max-width: 1200px;
 }
 
+/* This allows your specific flyers to span multiple columns or rows */
+.wide { grid-column: span 2; }
+.tall { grid-row: span 2; }
+
 .flyer-item {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .flyer-item img {
     width: 100%;
-    height: auto;
-    display: block;
-    /* Optional: Adds a subtle shadow to make them pop off the page */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    height: 100%;
+    /* 'contain' ensures the whole flyer is visible with no cropping */
+    object-fit: contain; 
     transition: transform 0.3s ease;
 }
 
 .flyer-item img:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
+    cursor: pointer;
 }
