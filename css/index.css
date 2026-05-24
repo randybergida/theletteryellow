@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif; /* Standard, comfortable width */
+    font-family: 'Roboto', sans-serif;
 }
 
 #page {
@@ -26,9 +26,9 @@ header {
     font-weight: 300;
     font-size: 36px;
     margin: 40px 0;
-    color: #000000;
-    text-decoration: none;
-    text-transform: none; /* Sentence case */
+    color: #000000 !important;
+    text-decoration: none !important;
+    text-transform: none;
 }
 
 /* 3. Navigation Links */
@@ -40,17 +40,20 @@ header {
     padding: 20px 0;
 }
 
-.nav-link {
+/* Specific selector to override global styles */
+.nav-container a.nav-link {
     font-weight: 400;
-    font-size: 15px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: none; /* Sentence case */
+    font-size: 18px; /* Increased from 15px to 18px */
+    color: #000000 !important; 
+    text-decoration: none !important;
+    text-transform: none;
+    transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #7F7F7F;
-    text-decoration: underline;
+.nav-container a.nav-link:hover {
+    color: #7F7F7F !important;
+    text-decoration: underline !important;
+    opacity: 0.7;
 }
 
 /* 5. Main Image & Socials */
