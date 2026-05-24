@@ -1,59 +1,44 @@
-/* 1. Basic Reset */
+/* 1. Global Styles */
 body {
-    background-color: #FFFFFF;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'open-sans-condensed', sans-serif; /* Fallback defined in head */
 }
 
 #page {
     width: 960px;
     margin: 0 auto;
-    background-color: #FFFFFF;
 }
 
-/* 2. Header and Navigation */
-#u1030-bw {
-    background-color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Title Font */
-#u1061-4 {
-    display: block;
-    font-family: open-sans-condensed, sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    margin: 20px 0;
-    text-decoration: none;
-    color: #000;
-}
-
-/* 3. Navigation Links (Targeting the IDs directly) */
-#u1035-4, #u1143-4, #u1036-4, #u1037-4, #u1039-4, #u1038-4, #u1040-4 {
-    font-family: open-sans-condensed, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #000000;
-    text-decoration: none;
-    /* Removed text-transform since your original didn't have it */
-}
-
-/* Flexbox Layout for the Links */
-#pu1035-4 {
+/* 2. Navigation Container */
+.nav-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 20px 0;
 }
 
-/* 4. Social Media Links */
-#ppu1031 {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+/* 3. The Navigation Links (This targets your new class) */
+.nav-link {
+    font-family: 'open-sans-condensed', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #7F7F7F;
+    text-decoration: underline;
+}
+
+/* 4. Title */
+#title {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0;
 }
 
 /* 5. Main Image */
