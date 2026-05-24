@@ -15,12 +15,11 @@ body {
 }
 
 /* 2. Header and Logo */
-/* --- Header & Nav --- */
 header {
     display: flex;
-    justify-content: center; /* Centers the whole block */
-    align-items: center;     /* Aligns items vertically */
-    gap: 40px;               /* Space between nav and logo */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin: 40px 0;
 }
 
@@ -30,21 +29,16 @@ header {
     color: #000000 !important;
     text-decoration: none !important;
     text-transform: none;
-    white-space: nowrap;     /* Keeps logo from wrapping */
+    white-space: nowrap;
 }
 
-.nav-container {
-    display: flex;
-    gap: 25px;               /* Space between links */
-}
+.nav-container { display: flex; gap: 25px; }
 
-/* Navigation Links */
 .nav-container a.nav-link {
-    font-weight: 300;        /* Thinner weight */
+    font-weight: 300;
     font-size: 16px;
     color: #000000 !important;
     text-decoration: none !important;
-    text-transform: none;
     transition: all 0.3s ease;
 }
 
@@ -54,12 +48,9 @@ header {
     opacity: 0.7;
 }
 
-/* Art Party Italics */
-.nav-link.italic {
-    font-style: italic;
-}
+.nav-link.italic { font-style: italic; }
 
-/* 5. Main Image & Socials */
+/* 3. Main Image & Socials */
 #main-image {
     width: 100%;
     height: 600px;
@@ -81,71 +72,37 @@ header {
     transition: opacity 0.2s;
 }
 
-/* --- Mobile Responsive & Hamburger --- */
-.nav-toggle, .nav-toggle-label { display: none; }
-
-@media screen and (max-width: 768px) {
-    /* Adjust container width for mobile */
-    #page { width: 100%; padding: 0 20px; box-sizing: border-box; }
-
-    /* Header adjustments */
-    header { flex-direction: column; gap: 0; margin: 20px 0; position: relative; }
-
-    /* Hamburger padding: Gives space below the icon */
-    .nav-toggle-label { 
-        display: block; 
-        cursor: pointer; 
-        padding: 10px; 
-        margin-bottom: 20px; /* Smidgen of space below icon */
-    }
-    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
-        display: block; background: #000; height: 2px; width: 25px; position: relative;
-    }
-    .nav-toggle-label span::before { content: ''; position: absolute; top: -8px; }
-    .nav-toggle-label span::after { content: ''; position: absolute; top: 8px; }
-    
-    /* General nav container reset */
-    .nav-container { display: none; flex-direction: column; width: 100%; text-align: center; gap: 15px; }
-
-    /* Specific margins to push away from "The Letter Yellow" */
-    .nav-container.left { margin-bottom: 20px; }
-    .nav-container.right { margin-top: 20px; }
-
-    /* Toggle visibility when checked */
-    .nav-toggle:checked ~ .nav-container { display: flex; }
-    
-    /* Main Photo Responsive */
-    #main-image { height: 300px; }
-}
-
-/* --- Bio Text Adjustment --- */
+/* 4. Bio Text Adjustment */
 .text-content p {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 16px; /* Reduced from 18px */
+    font-size: 16px;
     line-height: 1.6;
     color: #222;
+    text-align: left;
 }
 
-/* --- Review Links Style --- */
-.text-content a, .reviews-section a {
-    color: #222;           /* Changes blue to dark grey/black */
-    text-decoration: none; /* Removes default underline */
-    border-bottom: 1px solid #aaa; /* Subtle grey line instead of blue */
+.text-content a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #aaa;
     transition: 0.3s;
 }
 
-.text-content a:hover, .reviews-section a:hover {
-    border-bottom: 1px solid #000; /* Darkens on hover */
+.text-content a:hover {
+    border-bottom: 1px solid #000;
     color: #000;
 }
+
+/* 5. Video & Album Grids */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     margin: 0 auto;
-    max-width: 916px; /* Match your iframe max width */
+    max-width: 916px;
 }
+
 .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -153,41 +110,49 @@ header {
     width: 100%;
     height: 100%;
 }
+
+.albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.albums-container iframe {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: 853px;
+}
+
+.albums-container iframe.short-album {
+    min-height: 853px;
+}
+
+/* 6. Footer */
 .copyright {
     font-size: 14px;
     color: #7f7f7f;
     margin-bottom: 10px;
 }
 
-.albums-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 30px; /* Gives them a little breathing room */
-    margin-bottom: 50px;
-    width: 100%; /* Ensures the container spans the full width */
-}
+/* 7. Mobile Responsive & Hamburger */
+.nav-toggle, .nav-toggle-label { display: none; }
 
-.albums-container iframe {
-    flex: 1 1 300px; /* Allows them to grow/shrink equally */
-    max-width: 320px; /* Forces them to stay the same width as each other */
-    height: 853px;    /* Set all to the height of your longest embed */
-}
-
-/* Fix for the shorter album */
-.albums-container iframe.short-album {
-    min-height: 853px; 
-}
-
-/* Mobile: Force them to full width when they stack */
 @media screen and (max-width: 768px) {
-    .albums-container iframe {
-        flex: 1 1 100%;
-        max-width: 100%;
+    #page { width: 100%; padding: 0 20px; box-sizing: border-box; }
+    header { flex-direction: column; gap: 0; margin: 20px 0; }
+    .nav-toggle-label { display: block; cursor: pointer; padding: 10px; margin-bottom: 20px; }
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display: block; background: #000; height: 2px; width: 25px; position: relative;
     }
-}
-@media screen and (max-width: 768px) {
-    .albums-container iframe {
-        max-width: 100%; /* Makes them stretch to fill the bio width */
-    }
+    .nav-toggle-label span::before { content: ''; position: absolute; top: -8px; }
+    .nav-toggle-label span::after { content: ''; position: absolute; top: 8px; }
+    
+    .nav-container { display: none; flex-direction: column; width: 100%; text-align: center; gap: 15px; }
+    .nav-toggle:checked ~ .nav-container { display: flex; }
+    
+    #main-image { height: 300px; }
+    .albums-container iframe { flex: 1 1 100%; max-width: 100%; }
 }
