@@ -158,10 +158,22 @@ header {
     color: #7f7f7f;
     margin-bottom: 10px;
 }
+
 .albums-container {
     display: flex;
-    flex-wrap: wrap; /* Allows them to stack on small screens */
-    justify-content: center; /* Keeps them centered if there's extra room */
-    gap: 30px; /* Space between the albums */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 50px;
+}
+
+/* This makes the iframes flexible */
+.albums-container iframe {
+    flex: 1 1 350px; /* Grow to fill space, but don't shrink below 350px */
+    max-width: 350px; /* Prevents them from getting too huge on wide screens */
+}
+@media screen and (max-width: 768px) {
+    .albums-container iframe {
+        max-width: 100%; /* Makes them stretch to fill the bio width */
+    }
 }
