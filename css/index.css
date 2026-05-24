@@ -157,28 +157,33 @@ header {
     .albums-container iframe { flex: 1 1 100%; max-width: 100%; }
 }
 /* --- Shows / Flyers Gallery --- */
-/* Modern Masonry Layout */
 .flyers-container {
-    column-width: 300px; /* Adjusts based on screen size */
-    column-gap: 20px;    /* Space between items */
-    width: 100%;
+    display: grid;
+    /* This creates a fluid grid that fits as many columns as possible */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px; /* A base height for rows */
+    grid-auto-flow: dense; /* The magic: packs small items into gaps */
+    gap: 20px;
     margin: 50px auto;
+    width: 100%;
 }
 
 .flyer-item {
-    break-inside: avoid; /* Prevents an image from being split in half */
-    margin-bottom: 20px;
+    overflow: hidden;
+    /* Makes wide or tall posters span two grid cells */
 }
+
+/* Specific classes to control the "special" flyers */
+.wide { grid-column: span 2; }
+.tall { grid-row: span 2; }
 
 .flyer-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* This prevents distortion */
     transition: transform 0.3s ease;
-    border: 1px solid #eee;
 }
 
 .flyer-item img:hover {
     transform: scale(1.02);
-    cursor: pointer;
 }
