@@ -1,14 +1,10 @@
 /* 1. Global Styles */
-@import url("https://use.typekit.net/YOUR_KIT_ID.css"); /* Replace YOUR_KIT_ID with the ID from your Typekit script */
-
-/* Or, if you want to bypass Typekit and use Google Fonts for testing: */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-
 body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    /* Clean system font stack */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 #page {
@@ -26,12 +22,13 @@ header {
 
 #logo {
     display: block;
-    font-family: 'open-sans-condensed', sans-serif !important;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 36px;
     margin: 40px 0;
     color: #000000;
     text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* 3. Navigation Links */
@@ -43,11 +40,9 @@ header {
     padding: 20px 0;
 }
 
-/* Update your link class with this exact font family string */
 .nav-link {
-    font-family: 'open-sans-condensed', sans-serif !important;
-    font-weight: 300 !important;
-    font-size: 14px !important;
+    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 1px;
     color: #000000;
     text-decoration: none;
@@ -59,23 +54,23 @@ header {
     text-decoration: underline;
 }
 
-/* --- 5. Image & Socials --- */
+/* 5. Main Image & Socials */
 #main-image {
     width: 100%;
     height: 600px;
     background: #D2D2D4 url("../images/yellow glass.jpg") no-repeat center center;
     background-size: cover;
-    margin-bottom: 30px; /* Space between image and socials */
+    margin-bottom: 30px;
 }
 
 .social-container {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 40px;    /* INCREASE THIS NUMBER to add more space above */
-    margin-bottom: 40px; /* Space below the socials */
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-/* Add a simple hover effect to social icons */
+
 .social-container a img:hover {
     opacity: 0.7;
     transition: opacity 0.2s;
