@@ -163,15 +163,20 @@ header {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px; /* Slightly reduced gap to help them fit */
+    gap: 30px; /* Gives them a little breathing room */
     margin-bottom: 50px;
+    width: 100%; /* Ensures the container spans the full width */
 }
 
 .albums-container iframe {
-    /* flex: 0 1 30%; means: don't grow, can shrink, start at 30% width */
-    flex: 0 1 30%; 
-    min-width: 280px; /* They won't shrink smaller than this */
-    height: 700px;    /* Adjust height as needed to keep proportions */
+    flex: 1 1 300px; /* Allows them to grow/shrink equally */
+    max-width: 320px; /* Forces them to stay the same width as each other */
+    height: 853px;    /* Set all to the height of your longest embed */
+}
+
+/* Fix for the shorter album */
+.albums-container iframe.short-album {
+    min-height: 853px; 
 }
 
 /* Mobile: Force them to full width when they stack */
