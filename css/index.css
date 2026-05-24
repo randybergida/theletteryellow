@@ -1,8 +1,14 @@
 /* 1. Global Styles */
+@import url("https://use.typekit.net/YOUR_KIT_ID.css"); /* Replace YOUR_KIT_ID with the ID from your Typekit script */
+
+/* Or, if you want to bypass Typekit and use Google Fonts for testing: */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 #page {
