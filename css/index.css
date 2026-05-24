@@ -159,17 +159,22 @@ header {
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
     display: grid;
-    /* Create columns that are at least 300px wide, but fill available space */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* This makes the grid pack tightly */
-    grid-auto-flow: dense; 
+    /* Default: 1 column for small screens */
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
     gap: 20px;
     margin: 50px auto;
     width: 90%;
     max-width: 1200px;
 }
 
-/* This allows your specific flyers to span multiple columns or rows */
+/* Tablet and Desktop: 3 columns */
+@media (min-width: 768px) {
+    .flyers-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .wide { grid-column: span 2; }
 .tall { grid-row: span 2; }
 
@@ -183,7 +188,7 @@ header {
 .flyer-item img {
     width: 100%;
     height: 100%;
-    /* 'contain' ensures the whole flyer is visible with no cropping */
+    /* 'contain' prevents cropping, 'cover' would fill the space */
     object-fit: contain; 
     transition: transform 0.3s ease;
 }
