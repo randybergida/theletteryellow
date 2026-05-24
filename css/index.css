@@ -117,3 +117,18 @@ header {
     /* Main Photo Responsive */
     #main-image { height: 300px; }
 }
+/* Only targets the text in the bio and the reviews */
+.text-content, .text-content p, .reviews-section a {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #222;
+}
+
+/* Specifically for your Reviews header */
+h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
