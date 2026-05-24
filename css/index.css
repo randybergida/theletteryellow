@@ -3,15 +3,26 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    font-family: 'open-sans-condensed', sans-serif; /* Fallback defined in head */
 }
 
 #page {
     width: 960px;
     margin: 0 auto;
+    text-align: center;
 }
 
-/* 2. Navigation Container */
+/* 2. Header and Logo */
+#logo {
+    display: block;
+    font-family: 'open-sans-condensed', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin: 40px 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 3. Navigation Links */
 .nav-container {
     display: flex;
     justify-content: center;
@@ -19,7 +30,6 @@ body {
     padding: 20px 0;
 }
 
-/* 3. The Navigation Links (This targets your new class) */
 .nav-link {
     font-family: 'open-sans-condensed', sans-serif;
     font-weight: 300;
@@ -34,15 +44,23 @@ body {
     text-decoration: underline;
 }
 
-/* 4. Title */
-#title {
-    font-size: 36px;
-    text-align: center;
-    margin: 40px 0;
+/* 4. Social Links */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-/* 5. Main Image */
-#u978 {
+.social-link {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* 5. Main Image Area */
+#main-image {
     width: 100%;
     height: 600px;
     background: #D2D2D4 url("../images/yellow%20glass2.jpg") no-repeat center center;
