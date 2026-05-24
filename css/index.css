@@ -139,3 +139,10 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     #main-image { height: 300px; }
     .albums-container iframe { flex: 1 1 100%; max-width: 100%; }
 }
+/* Add breathing room to the hamburger menu */
+@media screen and (max-width: 768px) {
+    .nav-toggle:checked ~ .nav-container {
+        padding-top: 20px;    /* Space below the Logo */
+        padding-bottom: 20px; /* Space above your page content */
+    }
+}
