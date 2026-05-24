@@ -53,20 +53,21 @@ header {
     text-decoration: underline;
 }
 
-/* 4. Social Links */
-.social-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-/* 5. Main Image Area */
+/* --- 5. Image & Socials --- */
 #main-image {
     width: 100%;
     height: 600px;
     background: #D2D2D4 url("../images/yellow glass.jpg") no-repeat center center;
     background-size: cover;
+    margin-bottom: 30px; /* Space between image and socials */
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;    /* INCREASE THIS NUMBER to add more space above */
+    margin-bottom: 40px; /* Space below the socials */
 }
 /* Add a simple hover effect to social icons */
 .social-container a img:hover {
