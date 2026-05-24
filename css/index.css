@@ -117,18 +117,24 @@ header {
     /* Main Photo Responsive */
     #main-image { height: 300px; }
 }
-/* Only targets the text in the bio and the reviews */
-.text-content, .text-content p, .reviews-section a {
+
+/* --- Bio Text Adjustment --- */
+.text-content p {
     font-family: 'Georgia', 'Times New Roman', serif;
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 16px; /* Reduced from 18px */
+    line-height: 1.6;
     color: #222;
 }
 
-/* Specifically for your Reviews header */
-h3 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* --- Review Links Style --- */
+.text-content a, .reviews-section a {
+    color: #222;           /* Changes blue to dark grey/black */
+    text-decoration: none; /* Removes default underline */
+    border-bottom: 1px solid #aaa; /* Subtle grey line instead of blue */
+    transition: 0.3s;
+}
+
+.text-content a:hover, .reviews-section a:hover {
+    border-bottom: 1px solid #000; /* Darkens on hover */
+    color: #000;
 }
