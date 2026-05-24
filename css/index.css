@@ -15,36 +15,34 @@ body {
 }
 
 /* 2. Header and Logo */
+/* --- Header & Nav --- */
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centers the whole block */
+    align-items: center;     /* Aligns items vertically */
+    gap: 40px;               /* Space between nav and logo */
+    margin: 40px 0;
 }
 
 #logo {
-    display: block;
     font-weight: 300;
     font-size: 36px;
-    margin: 40px 0;
     color: #000000 !important;
     text-decoration: none !important;
     text-transform: none;
+    white-space: nowrap;     /* Keeps logo from wrapping */
 }
 
-/* 3. Navigation Links */
 .nav-container {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-    padding: 20px 0;
+    gap: 25px;               /* Space between links */
 }
 
-/* Specific selector to override global styles */
+/* Navigation Links */
 .nav-container a.nav-link {
-    font-weight: 400;
-    font-size: 18px; /* Increased from 15px to 18px */
-    color: #000000 !important; 
+    font-weight: 300;        /* Thinner weight */
+    font-size: 16px;
+    color: #000000 !important;
     text-decoration: none !important;
     text-transform: none;
     transition: all 0.3s ease;
@@ -54,6 +52,11 @@ header {
     color: #7F7F7F !important;
     text-decoration: underline !important;
     opacity: 0.7;
+}
+
+/* Art Party Italics */
+.nav-link.italic {
+    font-style: italic;
 }
 
 /* 5. Main Image & Socials */
