@@ -49,7 +49,7 @@ header {
 
 .nav-link.italic { font-style: italic; }
 
-/* 3. Main Image & Flyers */
+/* 3. Main Image & Flyers (Scoped to prevent conflicts) */
 #main-image {
     width: 100%;
     height: 600px;
@@ -67,9 +67,9 @@ header {
     gap: 40px;
 }
 
-.flyer-item { width: 100%; }
+.flyers-container .flyer-item { width: 100%; }
 
-.flyer-item img {
+.flyers-container .flyer-item img {
     width: 100%;
     height: auto;
     display: block;
@@ -104,17 +104,23 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     
     #logo { order: 2; margin-bottom: 20px; }
     
-    .nav-container { 
+    /* Menu Wrapper for grouped navs */
+    .menu-wrapper { 
         display: none; 
         flex-direction: column; 
         width: 100%; 
-        text-align: center; 
+        order: 3; 
         gap: 15px; 
-        order: 3;
-        margin-bottom: 20px; /* Added padding here for the hamburger menu list */
+        margin-bottom: 20px;
     }
     
-    .nav-toggle:checked ~ .nav-container { display: flex; }
+    .nav-toggle:checked ~ .menu-wrapper { display: flex; }
+    
+    .menu-wrapper .nav-container { 
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+    }
     
     #main-image { height: 300px; }
 }
