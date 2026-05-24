@@ -157,18 +157,17 @@ header {
     .albums-container iframe { flex: 1 1 100%; max-width: 100%; }
 }
 /* --- Shows / Flyers Gallery --- */
+/* Modern Masonry Layout */
 .flyers-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 50px;
+    column-width: 300px; /* Adjusts based on screen size */
+    column-gap: 20px;    /* Space between items */
     width: 100%;
+    margin: 50px auto;
 }
 
 .flyer-item {
-    flex: 1 1 280px; 
-    max-width: 300px;
+    break-inside: avoid; /* Prevents an image from being split in half */
+    margin-bottom: 20px;
 }
 
 .flyer-item img {
@@ -176,16 +175,10 @@ header {
     height: auto;
     display: block;
     transition: transform 0.3s ease;
-    border: 1px solid #eee; /* Optional: adds a very light border */
+    border: 1px solid #eee;
 }
 
 .flyer-item img:hover {
     transform: scale(1.02);
     cursor: pointer;
-}
-
-/* Ensure Songkick widget fits mobile */
-.songkick-widget {
-    display: block;
-    max-width: 100%;
 }
