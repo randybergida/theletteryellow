@@ -68,3 +68,8 @@ header {
     background: #D2D2D4 url("../images/yellow glass.jpg") no-repeat center center;
     background-size: cover;
 }
+/* Add a simple hover effect to social icons */
+.social-container a img:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
