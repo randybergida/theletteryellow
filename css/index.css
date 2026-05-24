@@ -89,11 +89,14 @@ header {
     #page { width: 100%; padding: 0 20px; box-sizing: border-box; }
 
     /* Header adjustments */
-    header { flex-direction: column; gap: 10px; margin: 20px 0; position: relative; }
+    header { flex-direction: column; gap: 0; margin: 20px 0; position: relative; }
 
-    /* Show Hamburger button */
+    /* Hamburger padding: Gives space below the icon */
     .nav-toggle-label { 
-        display: block; cursor: pointer; padding: 10px; 
+        display: block; 
+        cursor: pointer; 
+        padding: 10px; 
+        margin-bottom: 20px; /* Smidgen of space below icon */
     }
     .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
         display: block; background: #000; height: 2px; width: 25px; position: relative;
@@ -101,8 +104,12 @@ header {
     .nav-toggle-label span::before { content: ''; position: absolute; top: -8px; }
     .nav-toggle-label span::after { content: ''; position: absolute; top: 8px; }
     
-    /* Hide navs by default on mobile */
+    /* General nav container reset */
     .nav-container { display: none; flex-direction: column; width: 100%; text-align: center; gap: 15px; }
+
+    /* Specific margins to push away from "The Letter Yellow" */
+    .nav-container.left { margin-bottom: 20px; }
+    .nav-container.right { margin-top: 20px; }
 
     /* Toggle visibility when checked */
     .nav-toggle:checked ~ .nav-container { display: flex; }
