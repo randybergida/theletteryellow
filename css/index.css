@@ -159,31 +159,29 @@ header {
 /* --- Shows / Flyers Gallery --- */
 .flyers-container {
     display: grid;
-    /* This creates a fluid grid that fits as many columns as possible */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 250px; /* A base height for rows */
-    grid-auto-flow: dense; /* The magic: packs small items into gaps */
+    /* Keeps columns large enough to be readable */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     margin: 50px auto;
     width: 100%;
 }
 
 .flyer-item {
-    overflow: hidden;
-    /* Makes wide or tall posters span two grid cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Specific classes to control the "special" flyers */
-.wide { grid-column: span 2; }
-.tall { grid-row: span 2; }
 
 .flyer-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* This prevents distortion */
+    height: auto; /* This is the key: allows the height to expand for tall flyers */
+    display: block;
+    object-fit: contain; /* Keeps the whole image visible */
     transition: transform 0.3s ease;
 }
 
+/* Optional: keep your hover effect */
 .flyer-item img:hover {
     transform: scale(1.02);
+    cursor: pointer;
 }
