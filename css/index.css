@@ -7,41 +7,44 @@ body {
 
 #page {
     width: 960px;
-    margin: 0 auto; /* Centers the whole page */
+    margin: 0 auto;
     background-color: #FFFFFF;
 }
 
-/* 2. Header and Navigation Layout */
+/* 2. Header and Navigation */
 #u1030-bw {
     background-color: #FFFFFF;
     padding: 20px 0;
     text-align: center;
 }
 
+/* Title Font */
 #u1061-4 {
     display: block;
+    font-family: open-sans-condensed, sans-serif;
+    font-weight: 300;
     font-size: 36px;
     margin: 20px 0;
     text-decoration: none;
     color: #000;
 }
 
-/* 3. Navigation Links - Adding the font properties back */
-#pu1035-4 a {
+/* 3. Navigation Links (Targeting the IDs directly) */
+#u1035-4, #u1143-4, #u1036-4, #u1037-4, #u1039-4, #u1038-4, #u1040-4 {
     font-family: open-sans-condensed, sans-serif;
     font-weight: 300;
-    font-size: 14px; /* Adjust this to match your original size */
+    font-size: 14px;
     letter-spacing: 1px;
     color: #000000;
     text-decoration: none;
-    text-transform: uppercase; /* If your original was uppercase */
+    /* Removed text-transform since your original didn't have it */
 }
 
-/* Ensure the container is set up correctly */
+/* Flexbox Layout for the Links */
 #pu1035-4 {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Adjust space between links */
+    gap: 30px;
     padding: 20px 0;
 }
 
@@ -53,10 +56,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* 5. The Main Image (the yellow glass background) */
+/* 5. Main Image */
 #u978 {
     width: 100%;
-    height: 600px; /* Or whatever height you prefer */
+    height: 600px;
     background: #D2D2D4 url("../images/yellow%20glass2.jpg") no-repeat center center;
     background-size: cover;
 }
