@@ -121,8 +121,8 @@ header {
 }
 
 .albums-container iframe {
-    flex: 1 1 300px;
-    max-width: 300px;
+    flex: 1 1 280px;      /* Reduced base width */
+    max-width: 285px;    /* Guaranteed to fit 3 in a row (285*3 = 855 + gaps = ~920px) */
     height: 853px;
 }
 
