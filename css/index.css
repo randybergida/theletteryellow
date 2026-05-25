@@ -40,10 +40,10 @@ header {
 }
 
 #logo {
-    /* This points to your new Reminga .otf file */
-    font-family: 'Reminga', serif;
-    font-weight: 700;
-    font-style: italic;
+    /* Using Helvetica Neue for the logo */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700; /* Bolding it makes it pop as a logo */
+    font-style: normal;
     font-size: 36px;
     color: #000000 !important;
     text-decoration: none !important;
