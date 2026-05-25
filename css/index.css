@@ -22,15 +22,15 @@ body {
 }
 
 /* 2. Header and Logo */
+/* 2. Header and Logo */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Reintroducing your preferred spacing: 40px top/bottom, 20px padding sides */
-    margin: 40px 0; 
+    margin: 40px 0; /* Restored your preferred top/bottom spacing */
     padding: 0 20px;
     position: relative;
-    background-color: #FFFF00;
+    /* Removed background-color to get rid of the yellow line */
 }
 
 #logo {
@@ -43,19 +43,15 @@ header {
     color: #000000 !important;
     text-decoration: none !important;
     white-space: nowrap;
+    z-index: 10; /* Ensures logo stays above the menu */
 }
 
-/* Specific side containers */
-.nav-container.left {
-    display: flex;
-    gap: 25px; /* Restored your original gap */
-    justify-content: flex-start;
-}
-
+/* Nav containers - strictly for layout, not styles */
+.nav-container.left, 
 .nav-container.right {
     display: flex;
-    gap: 25px; /* Restored your original gap */
-    justify-content: flex-end;
+    gap: 25px;
+    z-index: 5;
 }
 
 /* Link Styles */
