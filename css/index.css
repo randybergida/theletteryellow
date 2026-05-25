@@ -22,41 +22,60 @@ body {
 }
 
 /* 2. Header and Logo */
-/* 2. Header and Logo */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0; /* Restored your preferred top/bottom spacing */
+    margin: 40px 0;
     padding: 0 20px;
     position: relative;
-    /* Removed background-color to get rid of the yellow line */
 }
 
 #logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 300;
     font-size: 36px;
     color: #000000 !important;
     text-decoration: none !important;
     white-space: nowrap;
-    z-index: 10; /* Ensures logo stays above the menu */
+    z-index: 10;
 }
 
-/* Nav containers - strictly for layout, not styles */
-.nav-container.left, 
-.nav-container.right {
+.nav-container {
     display: flex;
     gap: 25px;
-    z-index: 5;
+}
+
+/* DESKTOP VIEW: Split layout */
+@media (min-width: 768px) {
+    header {
+        justify-content: center; /* Helps center the logo absolute path */
+    }
+    #logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* MOBILE VIEW: Burger and stacking */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column; /* Stack vertically on mobile */
+        gap: 15px;
+    }
+    #logo {
+        position: static; /* Let the logo sit in the natural flow */
+        transform: none;
+    }
+    .nav-container {
+        flex-direction: column; /* Stack links vertically if expanded */
+        align-items: center;
+    }
 }
 
 /* Link Styles */
-.nav-container.left a.nav-link, 
-.nav-container.right a.nav-link {
+.nav-container a.nav-link {
     font-weight: 300;
     font-size: 16px;
     color: #000000 !important;
@@ -64,15 +83,13 @@ header {
     transition: all 0.3s ease;
 }
 
-.nav-container.left a.nav-link:hover, 
-.nav-container.right a.nav-link:hover {
+.nav-container a.nav-link:hover {
     color: #7F7F7F !important;
     text-decoration: underline !important;
     opacity: 0.7;
 }
 
 .nav-link.italic { font-style: italic; }
-
 /* 3. Main Image & Socials */
 #main-image {
     width: 100%;
