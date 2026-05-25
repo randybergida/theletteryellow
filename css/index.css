@@ -94,16 +94,16 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 .albums-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevents wrapping */
+    flex-wrap: wrap; /* Changed from nowrap to wrap */
     justify-content: center;
-    gap: 15px;
+    gap: 20px;       /* Increased gap for better spacing */
     margin-bottom: 50px;
     width: 100%;
 }
 
 .albums-container iframe {
-    flex: 0 0 300px; /* Fixed width: don't grow, don't shrink */
-    max-width: 300px;
+    flex: 1 1 300px; /* Allows them to shrink/grow, but starts at 300px */
+    max-width: 100%;
     height: 853px;
     border: none;
 }
@@ -145,7 +145,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     .nav-toggle:checked ~ .nav-container { display: flex; }
     
     #main-image { height: 300px; }
-    .albums-container iframe { flex: 1 1 100%; max-width: 100%; }
+   
 }
 /* Add breathing room to the hamburger menu */
 @media screen and (max-width: 768px) {
