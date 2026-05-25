@@ -110,7 +110,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     /* This ensures a minimum height of 850px, but allows it to grow if needed */
     min-height: 850px; 
     /* This keeps the player from getting cut off while maintaining responsiveness */
-    aspect-ratio: 1 / 1.6; 
+    aspect-ratio: 1 / 1.9; 
 }
 
 .albums-container iframe {
