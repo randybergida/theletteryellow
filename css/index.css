@@ -22,13 +22,15 @@ body {
 }
 
 /* 2. Header and Logo */
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /* Reintroducing your preferred spacing: 40px top/bottom, 20px padding sides */
+    margin: 40px 0; 
+    padding: 0 20px;
     position: relative;
+    background-color: #FFFF00;
 }
 
 #logo {
@@ -43,20 +45,20 @@ header {
     white-space: nowrap;
 }
 
-/* Ensure the navs take up their side */
+/* Specific side containers */
 .nav-container.left {
     display: flex;
-    gap: 20px;
+    gap: 25px; /* Restored your original gap */
     justify-content: flex-start;
 }
 
 .nav-container.right {
     display: flex;
-    gap: 20px;
+    gap: 25px; /* Restored your original gap */
     justify-content: flex-end;
 }
 
-/* Link Styles - Shared by both sides */
+/* Link Styles */
 .nav-container.left a.nav-link, 
 .nav-container.right a.nav-link {
     font-weight: 300;
@@ -73,9 +75,7 @@ header {
     opacity: 0.7;
 }
 
-.nav-link.italic {
-    font-style: italic;
-}
+.nav-link.italic { font-style: italic; }
 
 /* 3. Main Image & Socials */
 #main-image {
