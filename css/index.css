@@ -95,9 +95,10 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 }
 
 .albums-container iframe {
-    flex: 1 1 280px;
-    max-width: 285px;
+    flex: 1 1 300px; /* Increased from 280px to 300px */
+    max-width: 306px; /* Increased from 285px to give it breathing room */
     height: 853px;
+}
 }
 
 /* 5. Shows / Flyers Gallery */
