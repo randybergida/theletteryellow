@@ -24,9 +24,9 @@ body {
 /* 2. Header and Logo */
 header {
     display: flex;
-    justify-content: center; /* This centers the logo */
+    justify-content: center; /* This centers the group */
     align-items: center;
-    gap: 40px;               /* This provides breathing room between logo and links */
+    gap: 40px;               /* Adjust this number: smaller = tighter to logo */
     margin: 40px 0;
 }
 
@@ -37,14 +37,12 @@ header {
     color: #000000 !important;
     text-decoration: none !important;
     white-space: nowrap;
-    /* No absolute positioning here means your burger menu will stay safe */
 }
 
-/* This is the key: Force the navs to the sides */
-.nav-container.left { margin-right: auto; }
-.nav-container.right { margin-left: auto; }
-
-.nav-container { display: flex; gap: 25px; }
+.nav-container { 
+    display: flex; 
+    gap: 25px; 
+}
 
 .nav-container a.nav-link {
     font-weight: 300;
