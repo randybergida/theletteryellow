@@ -176,12 +176,13 @@ p {
 
 /* Editorial Link Styling */
 .text-content a {
-    color: #333333;           /* Your preferred 'lighter black' gray */
-    text-decoration: none;    /* Clean look by default */
+    color: #444444;           /* Slightly softer gray-black */
+    text-decoration: underline; /* Permanent underline for visibility */
+    text-decoration-thickness: 1px; /* Keeps it elegant/thin */
+    text-underline-offset: 3px;     /* Adds a little breathing room between text and line */
     transition: color 0.3s ease;
 }
 
 .text-content a:hover {
-    color: #000000;           /* Darks up on hover */
-    text-decoration: underline;
+    color: #000000;           /* Darks up when hovered */
 }
