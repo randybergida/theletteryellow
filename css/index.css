@@ -196,11 +196,23 @@ p {
 }
 @media screen and (max-width: 950px) {
     .albums-container {
-        grid-template-columns: 1fr; /* Stack into 1 column */
+        grid-template-columns: 1fr;
     }
     
-    /* We keep the height at 853px to prevent the Bandcamp player from reloading */
     .album-wrapper {
-        height: 853px; 
+        height: 853px;
+        overflow: hidden;
+        /* Force the wrapper to stay wide enough to prevent Bandcamp from collapsing */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .albums-container iframe {
+        /* Keep the width fixed to what it was on desktop so Bandcamp thinks it's still wide */
+        width: 100%; 
+        height: 100%;
+        /* This prevents the iframe from "realizing" it's being squeezed */
+        min-width: 900px; 
     }
 }
