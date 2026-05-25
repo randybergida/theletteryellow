@@ -94,16 +94,18 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 .albums-container {
     display: flex;
-    flex-wrap: wrap; /* Changed from nowrap to wrap */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;       /* Increased gap for better spacing */
+    gap: 20px;
     margin-bottom: 50px;
     width: 100%;
 }
 
 .albums-container iframe {
-    flex: 1 1 300px; /* Allows them to shrink/grow, but starts at 300px */
-    max-width: 100%;
+    /* Set basis to 300px, but allow it to grow to fill space */
+    /* If the screen is too small, it will wrap to the next line */
+    flex: 1 1 300px; 
+    max-width: 350px; /* Limits the max size so it doesn't get too wide on desktop */
     height: 853px;
     border: none;
 }
@@ -185,4 +187,10 @@ p {
 
 .text-content a:hover {
     color: #000000;           /* Darks up when hovered */
+}
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    .albums-container iframe {
+        flex: 1 1 100%; /* Force 100% width on tablet-sized screens */
+        max-width: 500px; /* Keeps them from being too giant on tablet */
+    }
 }
