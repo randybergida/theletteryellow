@@ -154,3 +154,8 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     font-size: 16px !important; 
     line-height: 1.6 !important;
 }
+
+/* Special class for large text blocks */
+.large-text p {
+    font-size: 20px !important;
+}
