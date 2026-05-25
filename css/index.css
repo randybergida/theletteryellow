@@ -94,7 +94,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 .albums-container {
     display: grid;
-    /* This creates a 3-column layout that never breaks to 2 */
+    /* This forces exactly 3 columns on desktop */
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     margin-bottom: 50px;
@@ -102,7 +102,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 }
 
 .albums-container iframe {
-    width: 100%; /* Forces the iframe to fill the grid cell */
+    width: 100%; 
     height: 853px;
     border: none;
 }
@@ -185,9 +185,12 @@ p {
 .text-content a:hover {
     color: #000000;           /* Darks up when hovered */
 }
-@media screen and (min-width: 600px) and (max-width: 950px) {
+@media screen and (max-width: 950px) {
+    .albums-container {
+        grid-template-columns: 1fr; /* This forces a single column */
+    }
+    
     .albums-container iframe {
-        flex: 1 1 100%; /* Force 100% width on tablet-sized screens */
-        max-width: 500px; /* Keeps them from being too giant on tablet */
+        height: 450px; /* Optional: Adjust height if 853px is too tall for mobile */
     }
 }
