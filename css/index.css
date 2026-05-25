@@ -157,5 +157,5 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 /* Special class for large text blocks */
 .large-text p {
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
