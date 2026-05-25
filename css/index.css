@@ -94,6 +94,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 /* Update your CSS */
 
+/* Update your Album Grids */
 .albums-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -102,12 +103,14 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     width: 100%;
 }
 
-/* Use padding-bottom for aspect ratio to keep it proportional */
 .album-wrapper {
     width: 100%;
-    padding-bottom: 250%; /* This maintains height relative to width */
     position: relative;
     overflow: hidden;
+    /* This ensures a minimum height of 850px, but allows it to grow if needed */
+    min-height: 850px; 
+    /* This keeps the player from getting cut off while maintaining responsiveness */
+    aspect-ratio: 1 / 1.5; 
 }
 
 .albums-container iframe {
@@ -204,8 +207,9 @@ p {
         grid-template-columns: 1fr;
     }
     
-    /* On mobile, we use a different ratio so it doesn't get too tall */
     .album-wrapper {
-        padding-bottom: 110%; 
+        /* On mobile, we keep the height constant to prevent the 'collapse' trigger */
+        min-height: 850px;
+        aspect-ratio: auto;
     }
 }
