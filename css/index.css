@@ -102,12 +102,12 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 }
 
 .albums-container iframe {
-    /* Set basis to 300px, but allow it to grow to fill space */
-    /* If the screen is too small, it will wrap to the next line */
-    flex: 1 1 300px; 
-    max-width: 350px; /* Limits the max size so it doesn't get too wide on desktop */
+    /* 1. Use calc to ensure 3 items fit perfectly with a 20px gap */
+    /* (100% / 3) - gap size = approx 33.33% */
+    flex: 0 1 calc(33.333% - 14px); 
     height: 853px;
     border: none;
+    max-width: 350px; /* Keeps them from getting huge on ultra-wide screens */
 }
 
 /* 5. Shows / Flyers Gallery */
