@@ -24,9 +24,9 @@ body {
 /* 2. Header and Logo */
 header {
     display: flex;
-    justify-content: center; /* This centers the group */
+    justify-content: center;
     align-items: center;
-    gap: 40px;               /* Adjust this number: smaller = tighter to logo */
+    gap: 40px;
     margin: 40px 0;
 }
 
@@ -38,11 +38,7 @@ header {
     text-decoration: none !important;
     white-space: nowrap;
 }
-
-.nav-container { 
-    display: flex; 
-    gap: 25px; 
-}
+.nav-container { display: flex; gap: 25px; }
 
 .nav-container a.nav-link {
     font-weight: 300;
