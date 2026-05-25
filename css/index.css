@@ -24,59 +24,34 @@ body {
 /* 2. Header and Logo */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* This centers the logo */
     align-items: center;
+    gap: 40px;               /* This provides breathing room between logo and links */
     margin: 40px 0;
-    padding: 0 40px; /* Increased side padding for better desktop spacing */
-    position: relative;
-    min-height: 50px; /* Ensures space for the logo */
 }
 
-/* DESKTOP VIEW: Split layout */
-@media (min-width: 768px) {
-    #logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        font-weight: 300;
-        font-size: 36px;
-        color: #000000 !important;
-        text-decoration: none !important;
-        white-space: nowrap;
-        z-index: 10;
-    }
-    
-    /* Ensure the navs take up their designated sides */
-    .nav-container.left { justify-content: flex-start; flex: 1; }
-    .nav-container.right { justify-content: flex-end; flex: 1; }
+#logo {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: #000000 !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+    /* No absolute positioning here means your burger menu will stay safe */
 }
 
-/* MOBILE VIEW: Burger and stacking */
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-    #logo {
-        position: static;
-        transform: none;
-        font-size: 30px; /* Slightly smaller for mobile */
-    }
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* This is the key: Force the navs to the sides */
+.nav-container.left { margin-right: auto; }
+.nav-container.right { margin-left: auto; }
 
-/* Link Styles */
+.nav-container { display: flex; gap: 25px; }
+
 .nav-container a.nav-link {
     font-weight: 300;
     font-size: 16px;
     color: #000000 !important;
     text-decoration: none !important;
     transition: all 0.3s ease;
-    padding: 0 10px; /* Added spacing between links */
 }
 
 .nav-container a.nav-link:hover {
