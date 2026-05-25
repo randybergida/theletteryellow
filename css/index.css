@@ -1,11 +1,17 @@
 /* 1. Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue.otf') format('opentype'); /* Adjust the path if your font is in a different folder */
+    font-weight: 300;
+    font-style: normal;
+}
 
 body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
     color: #111111; /* This will soften all your body text */
 }
 
@@ -25,6 +31,7 @@ header {
 }
 
 #logo {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 300;
     font-size: 36px;
     color: #000000 !important;
