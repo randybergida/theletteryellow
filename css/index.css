@@ -27,49 +27,44 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 40px 0;
-    padding: 0 20px;
+    padding: 0 40px; /* Increased side padding for better desktop spacing */
     position: relative;
-}
-
-#logo {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 300;
-    font-size: 36px;
-    color: #000000 !important;
-    text-decoration: none !important;
-    white-space: nowrap;
-    z-index: 10;
-}
-
-.nav-container {
-    display: flex;
-    gap: 25px;
+    min-height: 50px; /* Ensures space for the logo */
 }
 
 /* DESKTOP VIEW: Split layout */
 @media (min-width: 768px) {
-    header {
-        justify-content: center; /* Helps center the logo absolute path */
-    }
     #logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        color: #000000 !important;
+        text-decoration: none !important;
+        white-space: nowrap;
+        z-index: 10;
     }
+    
+    /* Ensure the navs take up their designated sides */
+    .nav-container.left { justify-content: flex-start; flex: 1; }
+    .nav-container.right { justify-content: flex-end; flex: 1; }
 }
 
 /* MOBILE VIEW: Burger and stacking */
 @media (max-width: 767px) {
     header {
-        flex-direction: column; /* Stack vertically on mobile */
+        flex-direction: column;
         gap: 15px;
     }
     #logo {
-        position: static; /* Let the logo sit in the natural flow */
+        position: static;
         transform: none;
+        font-size: 30px; /* Slightly smaller for mobile */
     }
     .nav-container {
-        flex-direction: column; /* Stack links vertically if expanded */
+        flex-direction: column;
         align-items: center;
     }
 }
@@ -81,6 +76,7 @@ header {
     color: #000000 !important;
     text-decoration: none !important;
     transition: all 0.3s ease;
+    padding: 0 10px; /* Added spacing between links */
 }
 
 .nav-container a.nav-link:hover {
@@ -90,6 +86,7 @@ header {
 }
 
 .nav-link.italic { font-style: italic; }
+
 /* 3. Main Image & Socials */
 #main-image {
     width: 100%;
