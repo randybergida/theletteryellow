@@ -155,29 +155,33 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     }
 }
 
-/* Add this outside the media block so it applies to everything */
-.text-content p {
-    font-size: 16px !important; 
-    line-height: 1.6 !important;
-}
-
-/* Special class for large text blocks */
-.large-text p {
-    font-size: 18px !important;
-}
-
-/* Editorial Text Styling */
+/* Editorial Paragraph & Text Styling */
 p {
-    margin-bottom: 30px;      /* Increased space between paragraphs */
-    font-size: 17px;          /* Slightly larger for readability */
-    line-height: 1.8;         /* Increased for that airy, magazine feel */
-    max-width: 750px;         /* Limits line length for better comfort */
-    margin-left: auto;        /* Keeps the text block centered */
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin-left: auto;
     margin-right: auto;
 }
 
-/* This ensures your existing .text-content override stays consistent */
 .text-content p {
-    font-size: 17px !important; 
-    line-height: 1.8 !important;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.large-text p {
+    font-size: 19px;
+}
+
+/* Editorial Link Styling */
+.text-content a {
+    color: #333333;           /* Your preferred 'lighter black' gray */
+    text-decoration: none;    /* Clean look by default */
+    transition: color 0.3s ease;
+}
+
+.text-content a:hover {
+    color: #000000;           /* Darks up on hover */
+    text-decoration: underline;
 }
