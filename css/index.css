@@ -107,10 +107,8 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     width: 100%;
     position: relative;
     overflow: hidden;
-    /* This ensures a minimum height of 850px, but allows it to grow if needed */
-    min-height: 850px; 
-    /* This keeps the player from getting cut off while maintaining responsiveness */
-    aspect-ratio: 1 / 1.9; 
+    /* Use fixed height here for desktop to guarantee the tracklist shows */
+    height: 950px; 
 }
 
 .albums-container iframe {
@@ -208,8 +206,7 @@ p {
     }
     
     .album-wrapper {
-        /* On mobile, we keep the height constant to prevent the 'collapse' trigger */
-        min-height: 850px;
-        aspect-ratio: auto;
+        /* Set a different fixed height for mobile if it's cutting off */
+        height: 1050px; 
     }
 }
