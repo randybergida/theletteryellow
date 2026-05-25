@@ -87,17 +87,18 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
 
 .albums-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevents wrapping */
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 50px;
     width: 100%;
 }
 
 .albums-container iframe {
-    flex: 1 1 300px; /* Increased from 280px to 300px */
-    max-width: 306px; /* Increased from 285px to give it breathing room */
+    flex: 0 0 300px; /* Fixed width: don't grow, don't shrink */
+    max-width: 300px;
     height: 853px;
+    border: none;
 }
 
 /* 5. Shows / Flyers Gallery */
