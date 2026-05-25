@@ -42,7 +42,7 @@ header {
 #logo {
     /* Using Helvetica Neue for the logo */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700; /* Bolding it makes it pop as a logo */
+    font-weight: 400; /* Bolding it makes it pop as a logo */
     font-style: normal;
     font-size: 36px;
     color: #000000 !important;
