@@ -196,10 +196,16 @@ p {
 }
 @media screen and (max-width: 950px) {
     .albums-container {
-        grid-template-columns: 1fr; /* This forces a single column */
+        grid-template-columns: 1fr; /* Forces single column */
     }
     
+    /* ADD THIS: Update the wrapper height too */
+    .album-wrapper {
+        height: 450px; 
+    }
+    
+    /* Keep this for the iframe */
     .albums-container iframe {
-        height: 450px; /* Optional: Adjust height if 853px is too tall for mobile */
+        height: 100%; 
     }
 }
