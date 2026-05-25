@@ -1,12 +1,27 @@
 /* 1. Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Custom Font Declarations */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('helveticaneue.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reminga';
+    src: url('RemingaOT-BoldIta.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
 
 body {
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    color: #111111; /* This will soften all your body text */
+   /* This points to your new Helvetica Neue .otf file */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111111;
 }
 
 #page {
@@ -25,13 +40,15 @@ header {
 }
 
 #logo {
-    font-weight: 300;
+    /* This points to your new Reminga .otf file */
+    font-family: 'Reminga', serif;
+    font-weight: 700;
+    font-style: italic;
     font-size: 36px;
     color: #000000 !important;
     text-decoration: none !important;
     white-space: nowrap;
 }
-
 .nav-container { display: flex; gap: 25px; }
 
 .nav-container a.nav-link {
