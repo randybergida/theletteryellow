@@ -108,9 +108,9 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     position: relative;
     overflow: hidden;
     /* Desktop: Use aspect-ratio for a nice, proportional look */
-    aspect-ratio: 1 / 1.7; 
+    aspect-ratio: 1 / 1.5; 
     /* This adds an extra safety net so it never gets too short */
-    min-height: 880px; 
+    min-height: 850px; 
 }
 
 .albums-container iframe {
@@ -211,7 +211,7 @@ p {
     .album-wrapper {
         /* On mobile, we bypass the ratio and fix the height */
         aspect-ratio: auto;
-        height: 880px; 
-        min-height: 880px;
+        height: 850px; 
+        min-height: 850px;
     }
 }
