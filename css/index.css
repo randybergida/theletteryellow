@@ -281,3 +281,10 @@ p {
     margin-bottom: 10px !important;
     line-height: 1.4 !important;
 }
+
+.credits strong {
+    font-weight: 600 !important; /* Forces it to be bold */
+    color: #000000 !important;   /* Ensures it stands out against the gray text */
+    display: inline-block;
+    width: 100px;                /* Optional: aligns the colons if you want a clean column look */
+}
