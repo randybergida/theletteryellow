@@ -283,8 +283,11 @@ p {
 }
 
 .credits strong {
-    font-weight: 600 !important; /* Forces it to be bold */
-    color: #000000 !important;   /* Ensures it stands out against the gray text */
-    display: inline-block;
-    width: 100px;                /* Optional: aligns the colons if you want a clean column look */
+    font-weight: 600 !important; 
+    /* Changed from #000000 to a dark gray for subtlety */
+    color: #666666 !important; 
+    /* Remove fixed widths and wrapping constraints for natural flow */
+    display: inline;
+    white-space: normal;
+    margin-right: 5px;
 }
