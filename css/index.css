@@ -112,7 +112,6 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     /* This adds an extra safety net so it never gets too short */
     min-height: 850px; 
 }
-}
 
 .albums-container iframe {
     position: absolute;
