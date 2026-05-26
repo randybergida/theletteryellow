@@ -286,3 +286,22 @@ p {
     text-align: left;
     padding: 0;
 }
+
+/* Only targets h3s and paragraphs inside the Album Page container */
+.album-page-content h3.album-title, 
+.album-page-content p {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+}
+
+/* Styles specifically for the album titles */
+.album-page-content .album-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #000;
+    margin-top: 40px !important;
+    margin-bottom: 10px !important;
+    line-height: 1.4 !important;
+}
