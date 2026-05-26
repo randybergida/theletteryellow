@@ -107,8 +107,8 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     width: 100%;
     position: relative;
     overflow: hidden;
-    /* Use fixed height here for desktop to guarantee the tracklist shows */
-    height: 950px; 
+    /* Desktop: Use aspect-ratio for a nice, proportional look */
+    aspect-ratio: 1 / 1.7; 
 }
 
 .albums-container iframe {
@@ -199,14 +199,12 @@ p {
     color: #000000;           /* Darks up when hovered */
 }
 
+
 /* Mobile/Tablet Stack */
 @media screen and (max-width: 950px) {
-    .albums-container {
-        grid-template-columns: 1fr;
-    }
-    
     .album-wrapper {
-        /* Set a different fixed height for mobile if it's cutting off */
-        height: 1050px; 
+        /* Mobile: Use a fixed height that we know is "just enough" */
+        height: 850px; 
+        aspect-ratio: auto;
     }
 }
