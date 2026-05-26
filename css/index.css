@@ -108,7 +108,7 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     position: relative;
     overflow: hidden;
     /* Desktop: Use aspect-ratio for a nice, proportional look */
-    aspect-ratio: 1 / 1.3; 
+    aspect-ratio: 1 / 1.1; 
     /* This adds an extra safety net so it never gets too short */
     min-height: 820px; 
 }
