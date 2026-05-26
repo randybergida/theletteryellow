@@ -272,3 +272,17 @@ p {
         height: auto; 
     }
 }
+.album-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #000;
+    
+    /* These specific margins and line-heights will override the global defaults */
+    margin-top: 40px !important;    
+    margin-bottom: 10px !important; 
+    line-height: 1.4 !important;    
+    
+    text-align: left;
+    padding: 0;
+}
