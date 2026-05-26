@@ -107,10 +107,10 @@ footer { margin-top: 60px; text-align: center; padding-bottom: 40px; }
     width: 100%;
     position: relative;
     overflow: hidden;
-    /* Desktop: Use aspect-ratio to keep them proportionate */
+    /* Desktop: Use aspect-ratio for a nice, proportional look */
     aspect-ratio: 1 / 1.7; 
-    /* Set a lower min-height for the 3-wide view so they don't get 'too long' */
-    min-height: 500px;
+    /* This adds an extra safety net so it never gets too short */
+    min-height: 880px; 
 }
 
 .albums-container iframe {
@@ -202,15 +202,14 @@ p {
 }
 
 
-/* Mobile/Tablet Stack & Transition Phase */
+/* Mobile/Tablet Stack */
 @media screen and (max-width: 950px) {
     .albums-container {
         grid-template-columns: 1fr;
     }
     
     .album-wrapper {
-        /* When it breaks to a stack, we lock the height to 880px */
-        /* This prevents the 'fat stack' transition issue */
+        /* On mobile, we bypass the ratio and fix the height */
         aspect-ratio: auto;
         height: 880px; 
         min-height: 880px;
